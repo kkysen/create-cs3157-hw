@@ -1,0 +1,1 @@
+{"version":3,"file":"MaybePromise.js","sourceRoot":"","sources":["MaybePromise.ts"],"names":[],"mappings":";;AAAA,4CAA0C;AAI7B,QAAA,YAAY,GAAG,UAAa,YAA6B;IAClE,IAAI,kBAAS,CAAC,YAAY,CAAC,EAAE;QACzB,OAAO,YAAY,CAAC;KACvB;IACD,OAAO,OAAO,CAAC,OAAO,CAAC,YAAY,CAAC,CAAC;AACzC,CAAC,CAAC"}
