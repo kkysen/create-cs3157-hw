@@ -3,7 +3,6 @@ import {Range} from "../util/collections/Range";
 import {Dir} from "../util/io/Dir";
 import {Creator, FileToCreate} from "../util/io/FileToCreate";
 import {capitalize} from "../util/misc/utils";
-import {path} from "../util/polyfills/path";
 import {LabInstructions} from "./LabInstructions";
 import {runCommand} from "./runCommand";
 
@@ -108,6 +107,13 @@ export const Lab = {
         
         const instructionsFileName = `Lab ${number} Instructions.txt`;
         
+        const remoteName = `${remoteUsername}@${remoteUrl}`;
+        const remoteDir = `${remoteParentDir}/${name}`;
+        const remote = `${remoteName}:${remoteDir}`;
+        
+        const syncCommand = (local: string) =>
+            (toRemote: boolean) => `rsync -az ${toRemote ? local : remote} ${toRemote ? remote : local}`;
+        
         const cMakeListsTxt = (name: string) => [
             "cmake_minimum_required(VERSION 3.9)",
             "set(CMAKE_C_STANDARD 11)",
@@ -129,8 +135,8 @@ export const Lab = {
                     fullName,
                     dir,
                     files: {
-                        cMakeListsTxt: dir.fileToCreate("CMakeLists.txt", cMakeListsTxt(fullName)),
-                        makeFile: dir.fileToCreate("Makefile", () => [
+                        cMakeListsTxt: dir.fileToCreate(LabFile.CMAKE_LISTS, cMakeListsTxt(fullName)),
+                        makeFile: dir.fileToCreate(LabFile.MAKEFILE, () => [
                             "CC = gcc",
                             "CFLAGS = -std=c11 -g -ggdb -Wall -Werror -Wextra -O3 -march=native -flto",
                             "LFLAGS = -g -flto",
@@ -159,11 +165,14 @@ export const Lab = {
                 const prefixParts = (prefix: string) => partNames.map(addPrefix(prefix)).join(" ");
                 const rule = (prefix: string, command: string = prefix) =>
                     (name: string) => `${addPrefix(prefix)(name)}:\n\tcd ${name}; make ${command}`;
+                const sync = syncCommand(".");
                 return [
                     `all: ${prefixParts("make")}`,
                     `clean: ${prefixParts("clean")}`,
                     ...partNames.map(rule("make", "all")),
                     ...partNames.map(rule("clean")),
+                    `pull:\n\t${sync(false)}`,
+                    `push:\n\t${sync(true)}`,
                     "",
                 ].join("\n\n");
             }),
@@ -219,11 +228,8 @@ export const Lab = {
             await fs.move(files.clonedRepo.dir(".git").path, files.git.path);
         };
         
-        const remoteName = `${remoteUsername}@${remoteUrl}:`;
-        const remoteDir = `${remoteParentDir}/${name}`;
-        
         const clone = async () => {
-            const command = `git clone ${remoteName}/home/jae/cs3157-pub/${name} ${dir.path}`;
+            const command = `git clone ${remoteName}:/home/jae/cs3157-pub/${name} ${dir.path}`;
             // git clone ks3343@clac.cs.columbia.edu:/home/jae/cs3157-pub/labN labN
             await runCommand(command);
         };
@@ -231,10 +237,8 @@ export const Lab = {
         const clean = () => runCommand("make clean", {cwd: dir.path});
         
         const sync = async (toRemote: boolean) => {
-            const local = dir.path;
-            const remote = `${remoteName}${remoteDir}`;
-            const command = `scp -r ${toRemote ? local : remote} ${toRemote ? remote : local}`;
-            // scp ${dir} ks3343@clac.cs.columbia.edu:${remoteDir}
+            const command = syncCommand(dir.path)(toRemote);
+            // rsync -az ${dir} ks3343@clac.cs.columbia.edu:${remoteDir}
             await runCommand(command);
         };
         
@@ -242,7 +246,7 @@ export const Lab = {
             const remoteCommands = [
                 `/home/w3157/submit/submit-lab ${name}`,
             ];
-            const command = `echo "${remoteCommands.join(" && ")}" | ssh ${remoteName}${remoteDir}`;
+            const command = `echo "${remoteCommands.join(" && ")}" | ssh ${remote}`;
             // echo "command" | ssh ks3343@clac.cs.columbia.edu:${remoteDir}
             await runCommand(command);
         };

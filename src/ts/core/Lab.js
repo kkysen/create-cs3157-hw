@@ -33,6 +33,10 @@ exports.Lab = {
         const dir = parentDir.dir(name);
         const labDir = dir;
         const instructionsFileName = `Lab ${number} Instructions.txt`;
+        const remoteName = `${remoteUsername}@${remoteUrl}`;
+        const remoteDir = `${remoteParentDir}/${name}`;
+        const remote = `${remoteName}:${remoteDir}`;
+        const syncCommand = (local) => (toRemote) => `rsync -az ${toRemote ? local : remote} ${toRemote ? remote : local}`;
         const cMakeListsTxt = (name) => [
             "cmake_minimum_required(VERSION 3.9)",
             "set(CMAKE_C_STANDARD 11)",
@@ -53,8 +57,8 @@ exports.Lab = {
                 fullName,
                 dir,
                 files: {
-                    cMakeListsTxt: dir.fileToCreate("CMakeLists.txt", cMakeListsTxt(fullName)),
-                    makeFile: dir.fileToCreate("Makefile", () => [
+                    cMakeListsTxt: dir.fileToCreate(LabFile.CMAKE_LISTS, cMakeListsTxt(fullName)),
+                    makeFile: dir.fileToCreate(LabFile.MAKEFILE, () => [
                         "CC = gcc",
                         "CFLAGS = -std=c11 -g -ggdb -Wall -Werror -Wextra -O3 -march=native -flto",
                         "LFLAGS = -g -flto",
@@ -81,11 +85,14 @@ exports.Lab = {
                 const addPrefix = (prefix) => (name) => `${prefix}${utils_1.capitalize(name)}`;
                 const prefixParts = (prefix) => partNames.map(addPrefix(prefix)).join(" ");
                 const rule = (prefix, command = prefix) => (name) => `${addPrefix(prefix)(name)}:\n\tcd ${name}; make ${command}`;
+                const sync = syncCommand(".");
                 return [
                     `all: ${prefixParts("make")}`,
                     `clean: ${prefixParts("clean")}`,
                     ...partNames.map(rule("make", "all")),
                     ...partNames.map(rule("clean")),
+                    `pull:\n\t${sync(false)}`,
+                    `push:\n\t${sync(true)}`,
                     "",
                 ].join("\n\n");
             }),
@@ -135,26 +142,22 @@ exports.Lab = {
             await fs.move(tempDir, files.clonedRepo.path);
             await fs.move(files.clonedRepo.dir(".git").path, files.git.path);
         };
-        const remoteName = `${remoteUsername}@${remoteUrl}:`;
-        const remoteDir = `${remoteParentDir}/${name}`;
         const clone = async () => {
-            const command = `git clone ${remoteName}/home/jae/cs3157-pub/${name} ${dir.path}`;
+            const command = `git clone ${remoteName}:/home/jae/cs3157-pub/${name} ${dir.path}`;
             // git clone ks3343@clac.cs.columbia.edu:/home/jae/cs3157-pub/labN labN
             await runCommand_1.runCommand(command);
         };
         const clean = () => runCommand_1.runCommand("make clean", { cwd: dir.path });
         const sync = async (toRemote) => {
-            const local = dir.path;
-            const remote = `${remoteName}${remoteDir}`;
-            const command = `scp -r ${toRemote ? local : remote} ${toRemote ? remote : local}`;
-            // scp ${dir} ks3343@clac.cs.columbia.edu:${remoteDir}
+            const command = syncCommand(dir.path)(toRemote);
+            // rsync -az ${dir} ks3343@clac.cs.columbia.edu:${remoteDir}
             await runCommand_1.runCommand(command);
         };
         const submit = async () => {
             const remoteCommands = [
                 `/home/w3157/submit/submit-lab ${name}`,
             ];
-            const command = `echo "${remoteCommands.join(" && ")}" | ssh ${remoteName}${remoteDir}`;
+            const command = `echo "${remoteCommands.join(" && ")}" | ssh ${remote}`;
             // echo "command" | ssh ks3343@clac.cs.columbia.edu:${remoteDir}
             await runCommand_1.runCommand(command);
         };

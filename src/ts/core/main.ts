@@ -12,7 +12,7 @@ async function asyncMain(): Promise<void> {
         parentDir: "/mnt/c/Users/Khyber/workspace/AdvancedProgramming/test",
     });
     await lab.create();
-    await lab.submit();
+    // await lab.submit();
 }
 
 function main(): void {
