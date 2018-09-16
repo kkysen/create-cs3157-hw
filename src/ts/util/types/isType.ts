@@ -29,7 +29,7 @@ export const isUndefined: Is<undefined> = (o: any): o is undefined => o === unde
 export const isBoolean: Is<boolean> = (o: any): o is boolean => o === true || o === false;
 export const isNumber = isNativeType("number");
 export const isString = isNativeType("string");
-export const isFunction = isNativeType("Function"); // TODO can this be optimized?
+export const isFunction: Is<Function> = (o: any): o is Function => typeof o === "function";
 export const isArray = Array.isArray;
 export const isReadonlyArray: Is<ReadonlyArray<any>> = Array.isArray;
 export const isRegExp = isNativeType("RegExp");

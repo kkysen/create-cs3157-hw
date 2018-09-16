@@ -150,7 +150,7 @@ declare interface Array<T> {
     
     readOnly(): ReadonlyArray<T>;
     
-    _(): T[];
+    _<T>(): T[];
     
 }
 

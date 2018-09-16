@@ -12,7 +12,7 @@ exports.isUndefined = (o) => o === undefined;
 exports.isBoolean = (o) => o === true || o === false;
 exports.isNumber = exports.isNativeType("number");
 exports.isString = exports.isNativeType("string");
-exports.isFunction = exports.isNativeType("Function"); // TODO can this be optimized?
+exports.isFunction = (o) => typeof o === "function";
 exports.isArray = Array.isArray;
 exports.isReadonlyArray = Array.isArray;
 exports.isRegExp = exports.isNativeType("RegExp");

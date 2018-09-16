@@ -16,6 +16,10 @@ export interface Range {
     
     has(i: number): boolean;
     
+    every(func: (i: number) => boolean): boolean;
+    
+    some(func: (i: number) => boolean): boolean;
+    
 }
 
 export type RangeClass = {
@@ -38,40 +42,22 @@ export const Range: RangeClass = {
         const _from: number = to === undefined ? 0 : from;
         const _to: number = to === undefined ? from : to;
         
-        return {
-            
-            fill<T>(t: T): T[] {
-                return [...new Array(_to - _from)].fill(t);
-            },
-            
-            toArray(): number[] {
-                return [...new Array(_to - _from)].map((e, i) => i + _from);
-            },
-            
-            map<T>(map: (i: number) => T): T[] {
-                return this.toArray().map(map);
-            },
-            
-            filter(func: (i: number) => boolean): number[] {
-                return this.toArray().filter(func);
-            },
-            
-            forEach(func: (i: number) => void): void {
+        const _: Range = {
+            fill: t => [...new Array(_to - _from)].fill(t),
+            toArray: () => [...new Array(_to - _from)].map((e, i) => i + _from),
+            map: map => _.toArray().map(map),
+            filter: func => _.toArray().filter(func),
+            forEach: func => {
                 for (let i: number = _from; i < _to; i++) {
                     func(i);
                 }
             },
-            
-            toInterval(): number[] {
-                return [_from, _to];
-            },
-            
-            has(i: number) {
-                return i >= _from && i < _to;
-            },
-            
+            toInterval: () => [_from, _to],
+            has: i => i >= _from && i < _to,
+            every: func => _.toArray().every(func),
+            some: func => _.toArray().some(func),
         };
-        
+        return _;
     },
     
     open(from: number, to: number): Range {
