@@ -18,6 +18,7 @@ enum LabFile {
     CMAKE_BUILD_DEBUG = "cmake-build-debug",
     OBJECT_FILES = "*.o",
     EXE_FILES = "*.exe",
+    SUBMISSION = "*.mbox",
 }
 
 interface LabPartFiles extends FilesToCreate {
@@ -112,7 +113,7 @@ export const Lab = {
         const remote = `${remoteName}:${remoteDir}`;
         
         const syncCommand = (local: string) =>
-            (toRemote: boolean) => `rsync -az ${toRemote ? local : remote} ${toRemote ? remote : local}`;
+            (toRemote: boolean) => `rsync -az ${toRemote ? local : remote} ${toRemote ? remote : `../${local}`}`;
         
         const cMakeListsTxt = (name: string) => [
             "cmake_minimum_required(VERSION 3.9)",
@@ -183,7 +184,9 @@ export const Lab = {
                     LabFile.IDEA,
                     LabFile.CMAKE_LISTS,
                     LabFile.CMAKE_BUILD_DEBUG,
+                    "",
                     instructionsFileName,
+                    LabFile.SUBMISSION,
                     "",
                     LabFile.OBJECT_FILES,
                     LabFile.EXE_FILES,

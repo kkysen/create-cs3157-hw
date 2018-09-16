@@ -17,6 +17,7 @@ var LabFile;
     LabFile["CMAKE_BUILD_DEBUG"] = "cmake-build-debug";
     LabFile["OBJECT_FILES"] = "*.o";
     LabFile["EXE_FILES"] = "*.exe";
+    LabFile["SUBMISSION"] = "*.mbox";
 })(LabFile || (LabFile = {}));
 function filesCreator(files) {
     return () => Object.values(files).asyncForEach(file => file.create());
@@ -36,7 +37,7 @@ exports.Lab = {
         const remoteName = `${remoteUsername}@${remoteUrl}`;
         const remoteDir = `${remoteParentDir}/${name}`;
         const remote = `${remoteName}:${remoteDir}`;
-        const syncCommand = (local) => (toRemote) => `rsync -az ${toRemote ? local : remote} ${toRemote ? remote : local}`;
+        const syncCommand = (local) => (toRemote) => `rsync -az ${toRemote ? local : remote} ${toRemote ? remote : `../${local}`}`;
         const cMakeListsTxt = (name) => [
             "cmake_minimum_required(VERSION 3.9)",
             "set(CMAKE_C_STANDARD 11)",
@@ -102,7 +103,9 @@ exports.Lab = {
                 LabFile.IDEA,
                 LabFile.CMAKE_LISTS,
                 LabFile.CMAKE_BUILD_DEBUG,
+                "",
                 instructionsFileName,
+                LabFile.SUBMISSION,
                 "",
                 LabFile.OBJECT_FILES,
                 LabFile.EXE_FILES,
