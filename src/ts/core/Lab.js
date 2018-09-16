@@ -22,9 +22,6 @@ var LabFile;
 function filesCreator(files) {
     return () => Object.values(files).asyncForEach(file => file.create());
 }
-function remoteOptions({ username = "ks3343", url = "clac.cs.columbia.edu", parentDir = "~/cs3157", }) {
-    return { username, url, parentDir };
-}
 exports.Lab = {
     new(options) {
         const { number, numParts, instructionsPath, parentDir: parentDirPath = "/mnt/c/Users/Khyber/workspace/AdvancedProgramming", remote: { username: remoteUsername = "ks3343", url: remoteUrl = "clac.cs.columbia.edu", parentDir: remoteParentDir = "~/cs3157", } = {}, } = options;

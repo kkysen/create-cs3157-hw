@@ -76,15 +76,6 @@ function filesCreator(files: FilesToCreate): () => Promise<void> {
     return () => Object.values(files).asyncForEach(file => file.create());
 }
 
-function remoteOptions(
-    {
-        username = "ks3343",
-        url = "clac.cs.columbia.edu",
-        parentDir = "~/cs3157",
-    }: Partial<RemoteOptions>): RemoteOptions {
-    return {username, url, parentDir};
-}
-
 export const Lab = {
     
     new(options: LabOptions): Lab {
