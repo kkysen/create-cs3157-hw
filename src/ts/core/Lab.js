@@ -93,6 +93,7 @@ exports.Lab = {
                     ...partNames.map(rule("clean")),
                     `pull:\n\t${sync(false)}`,
                     `push:\n\t${sync(true)}`,
+                    `submit:\n\t/home/w3157/submit/submit-lab ${name}`,
                     "",
                 ].join("\n\n");
             }),
