@@ -103,6 +103,7 @@ exports.Lab = {
                 "",
                 instructionsFileName,
                 LabFile.SUBMISSION,
+                `${name}-[0-9]*-[0-9]*-[0-9]*-[0-9]*`,
                 "",
                 LabFile.OBJECT_FILES,
                 LabFile.EXE_FILES,
