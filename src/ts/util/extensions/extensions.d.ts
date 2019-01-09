@@ -70,6 +70,8 @@ declare interface Object {
     
     freezeFields<T>(this: T): T;
     
+    let<T, U>(this: T, map: (t: T) => U): U
+    
 }
 
 declare interface FunctionConstructor {

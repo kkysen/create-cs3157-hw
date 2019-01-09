@@ -67,9 +67,9 @@ Object.defineImmutableProperties(Object, {
     
     getAllPropertyNames(object: any): string[] {
         return Array.from(
-            new Set(
+            new Set<string>(
                 Object.getPrototypeChain(object)
-                    .flatMap(proto => Object.getOwnPropertyNames(proto) as string[])
+                    .flatMap(Object.getOwnPropertyNames as (o: Object) => string[])
             )
         );
     },
@@ -129,7 +129,11 @@ Object.defineImmutableProperties(Object.prototype, {
             value.freeze();
         }
         return this;
-    }
+    },
+    
+    let<T, U>(this: T, map: (t: T) => U): U {
+        return map(this)
+    },
     
 });
 
@@ -379,7 +383,7 @@ Object.defineImmutableProperties(Map.prototype, {
 Object.defineImmutableProperties(Set.prototype, {
     
     map<T, U>(this: Set<T>, map: (e: T) => U): Set<U> {
-        return new Set([...this].map(map));
+        return new Set<U>([...this].map(map));
     },
     
 });

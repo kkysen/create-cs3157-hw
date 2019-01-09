@@ -1,0 +1,975 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3f83f4b9-cafa-46c2-bb39-c120e1745328" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ts/core/Lab.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ts/core/Lab.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ts/core/Lab.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/ts/core/Lab.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ts/core/Lab.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/ts/core/Lab.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ts/core/LabInstructions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ts/core/LabInstructions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ts/core/LabInstructions.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/ts/core/LabInstructions.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ts/core/LabInstructions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/ts/core/LabInstructions.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ts/core/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ts/core/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ts/core/main.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/ts/core/main.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ts/core/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/ts/core/main.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ts/util/extensions/allExtensions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ts/util/extensions/allExtensions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ts/util/extensions/allExtensions.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/ts/util/extensions/allExtensions.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ts/util/extensions/allExtensions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/ts/util/extensions/allExtensions.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ts/util/extensions/extensions.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/ts/util/extensions/extensions.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ts/util/io/Dir.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ts/util/io/Dir.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ts/util/io/Dir.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/ts/util/io/Dir.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ts/util/io/Dir.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/ts/util/io/Dir.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ts/util/io/FileToCreate.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ts/util/io/FileToCreate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ts/util/io/FileToCreate.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/ts/util/io/FileToCreate.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ts/util/io/FileToCreate.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/ts/util/io/FileToCreate.ts" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="main.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ts/core/main.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="476">
+              <caret line="34" column="7" selection-start-line="34" selection-start-column="7" selection-end-line="34" selection-end-column="7" />
+              <folding>
+                <element signature="e#0#52#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Lab.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ts/core/Lab.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="160">
+              <caret line="86" column="21" lean-forward="true" selection-start-line="86" selection-start-column="21" selection-end-line="86" selection-end-column="21" />
+              <folding>
+                <element signature="e#0#31#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LabInstructions.ts" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/ts/core/LabInstructions.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="22" column="16" lean-forward="true" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="allExtensions.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ts/util/extensions/allExtensions.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="135" column="6" lean-forward="true" selection-start-line="135" selection-start-column="6" selection-end-line="135" selection-end-column="6" />
+              <folding>
+                <element signature="e#0#36#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="extensions.d.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ts/util/extensions/extensions.d.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="72" column="43" lean-forward="true" selection-start-line="72" selection-start-column="4" selection-end-line="72" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Dir.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ts/util/io/Dir.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="697">
+              <caret line="43" column="10" selection-start-line="43" selection-start-column="10" selection-end-line="43" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" column="9" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>\t</find>
+      <find>Instructions</find>
+      <find>typeof</find>
+      <find>await</find>
+      <find>scp</find>
+      <find>Makefile</find>
+      <find>GITIGNORE</find>
+      <find>push</find>
+      <find>gitIg</find>
+      <find>Lab.new</find>
+      <find>dir</find>
+      <find>partNumbers</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/ts/core/LabRepo.ts" />
+        <option value="$PROJECT_DIR$/src/ts/core/Repo.ts" />
+        <option value="$PROJECT_DIR$/src/ts/core/Dir.ts" />
+        <option value="$PROJECT_DIR$/src/ts/util/io/File.ts" />
+        <option value="$PROJECT_DIR$/src/ts/core/_Lab.ts" />
+        <option value="$PROJECT_DIR$/src/ts/core/runCommand.ts" />
+        <option value="$PROJECT_DIR$/src/ts/util/misc/AwaitAnyInput.ts" />
+        <option value="$PROJECT_DIR$/src/ts/util/collections/Range.ts" />
+        <option value="$PROJECT_DIR$/src/ts/core/parseLabInstructions.ts" />
+        <option value="$PROJECT_DIR$/src/ts/util/types/isType.ts" />
+        <option value="$PROJECT_DIR$/src/ts/core/Lab.js" />
+        <option value="$PROJECT_DIR$/src/ts/core/Lab.ts" />
+        <option value="$PROJECT_DIR$/src/ts/util/io/Dir.ts" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/src/ts/core/main.ts" />
+        <option value="$PROJECT_DIR$/src/ts/util/io/FileToCreate.ts" />
+        <option value="$PROJECT_DIR$/src/ts/util/extensions/extensions.d.ts" />
+        <option value="$PROJECT_DIR$/src/ts/util/extensions/allExtensions.ts" />
+        <option value="$PROJECT_DIR$/src/ts/core/LabInstructions.ts" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER">
+    <package-json value="$PROJECT_DIR$/package.json" />
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/node_modules" />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-20" />
+    <option name="y" value="-20" />
+    <option name="width" value="3235" />
+    <option name="height" value="1735" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="create-cs3157-lab" type="b2602c69:ProjectViewProjectNode" />
+              <item name="create-cs3157-lab" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="create-cs3157-lab" type="b2602c69:ProjectViewProjectNode" />
+              <item name="create-cs3157-lab" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="create-cs3157-lab" type="b2602c69:ProjectViewProjectNode" />
+              <item name="create-cs3157-lab" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="ts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="create-cs3157-lab" type="b2602c69:ProjectViewProjectNode" />
+              <item name="create-cs3157-lab" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="ts" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="create-cs3157-lab" type="b2602c69:ProjectViewProjectNode" />
+              <item name="create-cs3157-lab" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="ts" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="create-cs3157-lab" type="b2602c69:ProjectViewProjectNode" />
+              <item name="create-cs3157-lab" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="ts" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+              <item name="extensions" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/ts/core/parseLabInstructions.js" />
+    <property name="node.js.detected.package.prettier" value="true" />
+    <property name="node.js.path.for.package.prettier" value="project" />
+    <property name="node.js.selected.package.prettier" value="" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Khyber\workspace\create-cs3157-lab\src\ts\util\io" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Node.js.Instructions">
+    <configuration name="Instructions" type="NodeJSConfigurationType" factoryName="Node.js" path-to-js-file="$PROJECT_DIR$/src/ts/core/LabInstructions.js" working-dir="$PROJECT_DIR$" />
+    <configuration name="Main" type="NodeJSConfigurationType" factoryName="Node.js" path-to-js-file="src/ts/core/main.js" working-dir="$PROJECT_DIR$" />
+    <list>
+      <item itemvalue="Node.js.Main" />
+      <item itemvalue="Node.js.Instructions" />
+    </list>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3f83f4b9-cafa-46c2-bb39-c120e1745328" name="Default" comment="" />
+      <created>1536899952822</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1536899952822</updated>
+      <workItem from="1536899954198" duration="17138000" />
+      <workItem from="1537061955780" duration="2910000" />
+      <workItem from="1537065691918" duration="2259000" />
+      <workItem from="1537068972300" duration="3068000" />
+      <workItem from="1537073625732" duration="67000" />
+      <workItem from="1537213596375" duration="1731000" />
+      <workItem from="1537293642733" duration="1068000" />
+      <workItem from="1537896526345" duration="25000" />
+      <workItem from="1538677685771" duration="936000" />
+      <workItem from="1539051592997" duration="2259000" />
+      <workItem from="1539465353903" duration="677000" />
+      <workItem from="1539498460936" duration="626000" />
+      <workItem from="1539989409103" duration="215000" />
+      <workItem from="1540424868216" duration="53000" />
+      <workItem from="1541029908369" duration="548000" />
+      <workItem from="1541030557918" duration="762000" />
+    </task>
+    <task id="LOCAL-00001" summary="Pretty much finished it all.&#10;It can git clone, setup, and create the files for a new lab.&#10;It can also push them to clac, where I can run the submit script.&#10;It can also parse the instructions to determine the lab number and number of parts.&#10;&#10;isFunction() from isType had to be changed.&#10;Object.prototype.toString.call() returns &quot;[object Function]&quot; for a function,&#10;but &quot;[object AsyncFunction]&quot; for an async function.&#10;So I had to use typeof o === &quot;function&quot; instead.">
+      <created>1537067931670</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1537067931670</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Using rsync instead of scp now.&#10;Makefile also includes pull and push rules for syncing using rsync.">
+      <created>1537071110259</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1537071110259</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Added submit rule in Makefile.">
+      <created>1537071977153</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1537071977153</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Fixed make pull.&#10;Added *.mbox to .gitignore.">
+      <created>1537073201636</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1537073201636</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Removed unused remoteOptions().">
+      <created>1537073685999</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1537073685999</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Added lab submission directory to gitignore.">
+      <created>1537223114911</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1537223114911</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="34342000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-6" y="-6" width="1293" height="693" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info anchor="bottom" id="TypeScript" order="7" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49911505" visible="true" weight="0.24960254" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="7" visible="true" weight="0.32920355" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32920355" />
+      <window_info id="npm" order="2" sideWeight="0.50088495" side_tool="true" weight="0.24960254" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32920355" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/src/ts/core/main.js" />
+        <option value="$PROJECT_DIR$/src/ts/core/main.js.map" />
+        <option value="$PROJECT_DIR$/src/ts/util/io/Path.js" />
+        <option value="$PROJECT_DIR$/src/ts/util/io/Path.js.map" />
+        <option value="$PROJECT_DIR$/src/ts/util/ix/ix.js" />
+        <option value="$PROJECT_DIR$/src/ts/util/ix/ix.js.map" />
+        <option value="$PROJECT_DIR$/src/ts/util/rx/timer.js" />
+        <option value="$PROJECT_DIR$/src/ts/util/rx/timer.js.map" />
+        <option value="$PROJECT_DIR$/src/ts/util/rx/fromListener.js" />
+        <option value="$PROJECT_DIR$/src/ts/util/rx/fromListener.js.map" />
+        <option value="$PROJECT_DIR$/src/ts/util/rx/fromFSWatch.js" />
+        <option value="$PROJECT_DIR$/src/ts/util/rx/fromFSWatch.js.map" />
+        <option value="$PROJECT_DIR$/src/ts/util/env/production.js" />
+        <option value="$PROJECT_DIR$/src/ts/util/env/production.js.map" />
+        <option value="$PROJECT_DIR$/src/ts/util/data/DataAccessor.js" />
+        <option value="$PROJECT_DIR$/src/ts/util/data/DataAccessor.js.map" />
+        <option value="$PROJECT_DIR$/src/ts/util/data/DataSource.js" />
+        <option value="$PROJECT_DIR$/src/ts/util/data/DataSource.js.map" />
+        <option value="$PROJECT_DIR$/src/ts/util/hash/Hash.js" />
+        <option value="$PROJECT_DIR$/src/ts/util/hash/Hash.js.map" />
+        <option value="$PROJECT_DIR$/src/ts/util/hash/Sha.js" />
+        <option value="$PROJECT_DIR$/src/ts/util/hash/Sha.js.map" />
+        <option value="$PROJECT_DIR$/src/ts/util/hash/fnv1a.js" />
+        <option value="$PROJECT_DIR$/src/ts/util/hash/fnv1a.js.map" />
+        <option value="$PROJECT_DIR$/src/ts/util/misc/compare.js" />
+        <option value="$PROJECT_DIR$/src/ts/util/misc/compare.js.map" />
+        <option value="$PROJECT_DIR$/src/ts/util/misc/equals.js" />
+        <option value="$PROJECT_DIR$/src/ts/util/misc/equals.js.map" />
+        <option value="$PROJECT_DIR$/src/ts/util/misc/sparseTranspose.js" />
+        <option value="$PROJECT_DIR$/src/ts/util/misc/sparseTranspose.js.map" />
+        <option value="$PROJECT_DIR$/src/ts/util/misc/utils.js" />
+        <option value="$PROJECT_DIR$/src/ts/util/misc/utils.js.map" />
+        <option value="$PROJECT_DIR$/src/ts/util/misc/when.js" />
+        <option value="$PROJECT_DIR$/src/ts/util/misc/when.js.map" />
+        <option value="$PROJECT_DIR$/src/ts/util/misc/hash.js" />
+        <option value="$PROJECT_DIR$/src/ts/util/misc/hash.js.map" />
+        <option value="$PROJECT_DIR$/src/ts/util/misc/regex.js" />
+        <option value="$PROJECT_DIR$/src/ts/util/misc/regex.js.map" />
+        <option value="$PROJECT_DIR$/src/ts/util/misc/groupBy.js" />
+        <option value="$PROJECT_DIR$/src/ts/util/misc/groupBy.js.map" />
+        <option value="$PROJECT_DIR$/src/ts/util/misc/hashEquals.js" />
+        <option value="$PROJECT_DIR$/src/ts/util/misc/hashEquals.js.map" />
+        <option value="$PROJECT_DIR$/src/ts/util/misc/math.js" />
+        <option value="$PROJECT_DIR$/src/ts/util/misc/math.js.map" />
+        <option value="$PROJECT_DIR$/src/ts/util/async/greedyAsyncIterable.js" />
+        <option value="$PROJECT_DIR$/src/ts/util/async/greedyAsyncIterable.js.map" />
+        <option value="$PROJECT_DIR$/src/ts/util/async/asyncSpread.js" />
+        <option value="$PROJECT_DIR$/src/ts/util/async/asyncSpread.js.map" />
+        <option value="$PROJECT_DIR$/src/ts/util/cache/Refresh.js" />
+        <option value="$PROJECT_DIR$/src/ts/util/cache/Refresh.js.map" />
+        <option value="$PROJECT_DIR$/src/ts/util/cache/cache.js" />
+        <option value="$PROJECT_DIR$/src/ts/util/cache/cache.js.map" />
+        <option value="$PROJECT_DIR$/src/ts/util/debug/DebugProxy.js" />
+        <option value="$PROJECT_DIR$/src/ts/util/debug/DebugProxy.js.map" />
+        <option value="$PROJECT_DIR$/src/ts/util/types/ValueOrGetter.js" />
+        <option value="$PROJECT_DIR$/src/ts/util/types/ValueOrGetter.js.map" />
+        <option value="$PROJECT_DIR$/src/ts/util/types/Truthy.js" />
+        <option value="$PROJECT_DIR$/src/ts/util/types/Truthy.js.map" />
+        <option value="$PROJECT_DIR$/src/ts/util/types/difference.js" />
+        <option value="$PROJECT_DIR$/src/ts/util/types/difference.js.map" />
+        <option value="$PROJECT_DIR$/src/ts/util/types/IfElse.js" />
+        <option value="$PROJECT_DIR$/src/ts/util/types/IfElse.js.map" />
+        <option value="$PROJECT_DIR$/src/ts/util/types/keyof.js" />
+        <option value="$PROJECT_DIR$/src/ts/util/types/keyof.js.map" />
+        <option value="$PROJECT_DIR$/src/ts/util/types/ValueOf.js" />
+        <option value="$PROJECT_DIR$/src/ts/util/types/ValueOf.js.map" />
+        <option value="$PROJECT_DIR$/src/ts/util/types/ElementTags.js" />
+        <option value="$PROJECT_DIR$/src/ts/util/types/ElementTags.js.map" />
+        <option value="$PROJECT_DIR$/src/ts/util/types/TypedArray.js" />
+        <option value="$PROJECT_DIR$/src/ts/util/types/TypedArray.js.map" />
+        <option value="$PROJECT_DIR$/src/ts/util/types/WellKnownSymbols.js" />
+        <option value="$PROJECT_DIR$/src/ts/util/types/WellKnownSymbols.js.map" />
+        <option value="$PROJECT_DIR$/src/ts/util/types/indexable.js" />
+        <option value="$PROJECT_DIR$/src/ts/util/types/indexable.js.map" />
+        <option value="$PROJECT_DIR$/src/ts/util/types/typeAliases.js" />
+        <option value="$PROJECT_DIR$/src/ts/util/types/typeAliases.js.map" />
+        <option value="$PROJECT_DIR$/src/ts/util/types/isType.js" />
+        <option value="$PROJECT_DIR$/src/ts/util/types/isType.js.map" />
+        <option value="$PROJECT_DIR$/src/ts/util/events/multiEvent.js" />
+        <option value="$PROJECT_DIR$/src/ts/util/events/multiEvent.js.map" />
+        <option value="$PROJECT_DIR$/src/ts/util/object/objectFields.js" />
+        <option value="$PROJECT_DIR$/src/ts/util/object/objectFields.js.map" />
+        <option value="$PROJECT_DIR$/src/ts/util/object/mapFields.js" />
+        <option value="$PROJECT_DIR$/src/ts/util/object/mapFields.js.map" />
+        <option value="$PROJECT_DIR$/src/ts/util/window/globalWindow.js" />
+        <option value="$PROJECT_DIR$/src/ts/util/window/globalWindow.js.map" />
+        <option value="$PROJECT_DIR$/src/ts/util/window/anyWindow.js" />
+        <option value="$PROJECT_DIR$/src/ts/util/window/anyWindow.js.map" />
+        <option value="$PROJECT_DIR$/src/ts/util/sandbox/SandboxMessenger.js" />
+        <option value="$PROJECT_DIR$/src/ts/util/sandbox/SandboxMessenger.js.map" />
+        <option value="$PROJECT_DIR$/src/ts/util/sandbox/Sandbox.js" />
+        <option value="$PROJECT_DIR$/src/ts/util/sandbox/Sandbox.js.map" />
+        <option value="$PROJECT_DIR$/src/ts/util/animation/animate.js" />
+        <option value="$PROJECT_DIR$/src/ts/util/animation/animate.js.map" />
+        <option value="$PROJECT_DIR$/src/ts/util/polyfills/path.js" />
+        <option value="$PROJECT_DIR$/src/ts/util/polyfills/path.js.map" />
+        <option value="$PROJECT_DIR$/src/ts/util/decorators/bind.js" />
+        <option value="$PROJECT_DIR$/src/ts/util/decorators/bind.js.map" />
+        <option value="$PROJECT_DIR$/src/ts/util/decorators/named.js" />
+        <option value="$PROJECT_DIR$/src/ts/util/decorators/named.js.map" />
+        <option value="$PROJECT_DIR$/src/ts/util/extensions/extensionsConfig.js" />
+        <option value="$PROJECT_DIR$/src/ts/util/extensions/extensionsConfig.js.map" />
+        <option value="$PROJECT_DIR$/src/ts/util/extensions/allExtensions.js" />
+        <option value="$PROJECT_DIR$/src/ts/util/extensions/allExtensions.js.map" />
+        <option value="$PROJECT_DIR$/src/ts/util/functional/utils.js" />
+        <option value="$PROJECT_DIR$/src/ts/util/functional/utils.js.map" />
+        <option value="$PROJECT_DIR$/src/ts/util/functional/Mapper.js" />
+        <option value="$PROJECT_DIR$/src/ts/util/functional/Mapper.js.map" />
+        <option value="$PROJECT_DIR$/src/ts/util/functional/Modifier.js" />
+        <option value="$PROJECT_DIR$/src/ts/util/functional/Modifier.js.map" />
+        <option value="$PROJECT_DIR$/src/ts/util/functional/Test.js" />
+        <option value="$PROJECT_DIR$/src/ts/util/functional/Test.js.map" />
+        <option value="$PROJECT_DIR$/src/ts/util/functional/Callables.js" />
+        <option value="$PROJECT_DIR$/src/ts/util/functional/Callables.js.map" />
+        <option value="$PROJECT_DIR$/src/ts/util/functional/iterables.js" />
+        <option value="$PROJECT_DIR$/src/ts/util/functional/iterables.js.map" />
+        <option value="$PROJECT_DIR$/src/ts/util/functional/Filter.js" />
+        <option value="$PROJECT_DIR$/src/ts/util/functional/Filter.js.map" />
+        <option value="$PROJECT_DIR$/src/ts/util/collections/Collection.js" />
+        <option value="$PROJECT_DIR$/src/ts/util/collections/Collection.js.map" />
+        <option value="$PROJECT_DIR$/src/ts/util/collections/Set.js" />
+        <option value="$PROJECT_DIR$/src/ts/util/collections/Set.js.map" />
+        <option value="$PROJECT_DIR$/src/ts/util/collections/Range.js" />
+        <option value="$PROJECT_DIR$/src/ts/util/collections/Range.js.map" />
+        <option value="$PROJECT_DIR$/src/ts/util/collections/ArrayStack.js" />
+        <option value="$PROJECT_DIR$/src/ts/util/collections/ArrayStack.js.map" />
+        <option value="$PROJECT_DIR$/src/ts/util/collections/Map.js" />
+        <option value="$PROJECT_DIR$/src/ts/util/collections/Map.js.map" />
+        <option value="$PROJECT_DIR$/src/ts/util/collections/HashMap.js" />
+        <option value="$PROJECT_DIR$/src/ts/util/collections/HashMap.js.map" />
+        <option value="$PROJECT_DIR$/src/ts/util/collections/Queue.js" />
+        <option value="$PROJECT_DIR$/src/ts/util/collections/Queue.js.map" />
+        <option value="$PROJECT_DIR$/src/ts/util/collections/Comparator.js" />
+        <option value="$PROJECT_DIR$/src/ts/util/collections/Comparator.js.map" />
+        <option value="$PROJECT_DIR$/src/ts/util/collections/Deque.js" />
+        <option value="$PROJECT_DIR$/src/ts/util/collections/Deque.js.map" />
+        <option value="$PROJECT_DIR$/src/ts/util/collections/HashSet.js" />
+        <option value="$PROJECT_DIR$/src/ts/util/collections/HashSet.js.map" />
+        <option value="$PROJECT_DIR$/src/ts/util/collections/Stack.js" />
+        <option value="$PROJECT_DIR$/src/ts/util/collections/Stack.js.map" />
+        <option value="$PROJECT_DIR$/src/ts/util/collections/List.js" />
+        <option value="$PROJECT_DIR$/src/ts/util/collections/List.js.map" />
+        <option value="$PROJECT_DIR$/src/ts/util/collections/query/All.js" />
+        <option value="$PROJECT_DIR$/src/ts/util/collections/query/All.js.map" />
+        <option value="$PROJECT_DIR$/src/ts/util/maybePromise/MaybePromise.js" />
+        <option value="$PROJECT_DIR$/src/ts/util/maybePromise/MaybePromise.js.map" />
+        <option value="$PROJECT_DIR$/src/ts/util/io/FileToCreate.js" />
+        <option value="$PROJECT_DIR$/src/ts/util/io/FileToCreate.js.map" />
+        <option value="$PROJECT_DIR$/src/ts/core/runCommand.js.map" />
+        <option value="$PROJECT_DIR$/src/ts/core/runCommand.js" />
+        <option value="$PROJECT_DIR$/src/ts/util/misc/AwaitAnyInput.js.map" />
+        <option value="$PROJECT_DIR$/src/ts/util/misc/AwaitAnyInput.js" />
+        <option value="$PROJECT_DIR$/../CUDirectory/src/ts/lib/axios.js.map" />
+        <option value="$PROJECT_DIR$/../CUDirectory/src/ts/lib/axios.js" />
+        <option value="$PROJECT_DIR$/../CUDirectory/src/ts/core/UNIs.js" />
+        <option value="$PROJECT_DIR$/../CUDirectory/src/ts/core/UNIs.js.map" />
+        <option value="$PROJECT_DIR$/../CUDirectory/src/ts/core/scrape.js" />
+        <option value="$PROJECT_DIR$/../CUDirectory/src/ts/core/scrape.js.map" />
+        <option value="$PROJECT_DIR$/../CUDirectory/src/ts/core/Person.js" />
+        <option value="$PROJECT_DIR$/../CUDirectory/src/ts/core/Person.js.map" />
+        <option value="$PROJECT_DIR$/../CUDirectory/src/ts/util/mongoose/SchemaModel.js.map" />
+        <option value="$PROJECT_DIR$/../CUDirectory/src/ts/util/mongoose/SchemaModel.js" />
+      </list>
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/lab1" />
+    </ignored-roots>
+    <MESSAGE value="Pretty much finished it all.&#10;It can git clone, setup, and create the files for a new lab.&#10;It can also push them to clac, where I can run the submit script.&#10;It can also parse the instructions to determine the lab number and number of parts.&#10;&#10;isFunction() from isType had to be changed.&#10;Object.prototype.toString.call() returns &quot;[object Function]&quot; for a function,&#10;but &quot;[object AsyncFunction]&quot; for an async function.&#10;So I had to use typeof o === &quot;function&quot; instead." />
+    <MESSAGE value="Using rsync instead of scp now.&#10;Makefile also includes pull and push rules for syncing using rsync." />
+    <MESSAGE value="Added submit rule in Makefile." />
+    <MESSAGE value="Fixed make pull.&#10;Added *.mbox to .gitignore." />
+    <MESSAGE value="Removed unused remoteOptions()." />
+    <MESSAGE value="Added lab submission directory to gitignore." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added lab submission directory to gitignore." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="2" />
+    </breakpoint-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>Object.prototype.toString.call(async () =&gt; {})</expression-string>
+        <language-id>TypeScript</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>Object.prototype.toString.call(() =&gt; {})</expression-string>
+        <language-id>TypeScript</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>typeof (() =&gt; {})</expression-string>
+        <language-id>TypeScript</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>typeof (async () =&gt; {})</expression-string>
+        <language-id>TypeScript</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>_isFunction(async () =&gt; {})</expression-string>
+        <language-id>TypeScript</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>_isFunction(() =&gt; {})</expression-string>
+        <language-id>TypeScript</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>_isFunction(contents)</expression-string>
+        <language-id>TypeScript</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>_isFunction</expression-string>
+        <language-id>TypeScript</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>isFunction(contents)</expression-string>
+        <language-id>TypeScript</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ts/core/Lab.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1377">
+          <caret line="81" selection-start-line="81" selection-end-line="81" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ts/core/LabInstructions.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="32" column="10" lean-forward="true" selection-start-line="32" selection-start-column="10" selection-end-line="32" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ts/core/main.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="24" column="9" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ts/core/Lab.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1632">
+          <caret line="98" column="8" lean-forward="true" selection-start-line="98" selection-start-column="8" selection-end-line="98" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ts/core/LabInstructions.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="38" column="2" selection-start-line="38" selection-start-column="2" selection-end-line="38" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ts/core/main.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ts/core/Lab.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1292">
+          <caret line="76" column="1" selection-start-line="76" selection-start-column="1" selection-end-line="76" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ts/core/LabInstructions.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="38" column="2" selection-start-line="38" selection-start-column="2" selection-end-line="38" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ts/core/main.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ts/core/Lab.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1972">
+          <caret line="116" column="8" lean-forward="true" selection-start-line="116" selection-start-column="8" selection-end-line="116" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ts/core/LabInstructions.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="38" column="2" selection-start-line="38" selection-start-column="2" selection-end-line="38" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ts/core/main.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ts/core/Lab.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3383">
+          <caret line="199" column="10" lean-forward="true" selection-start-line="199" selection-start-column="10" selection-end-line="199" selection-end-column="10" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ts/core/LabInstructions.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="38" column="2" selection-start-line="38" selection-start-column="2" selection-end-line="38" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ts/core/main.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="9" lean-forward="true" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ts/core/Lab.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1479">
+          <caret line="87" column="20" lean-forward="true" selection-start-line="87" selection-start-column="20" selection-end-line="87" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ts/core/main.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="12" column="7" lean-forward="true" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ts/core/LabInstructions.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="43" column="8" lean-forward="true" selection-start-line="43" selection-start-column="8" selection-end-line="43" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ts/core/Lab.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4369">
+          <caret line="257" column="14" lean-forward="true" selection-start-line="257" selection-start-column="14" selection-end-line="257" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ts/core/runCommand.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="42" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ts/util/io/FileToCreate.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="14" lean-forward="true" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ts/util/io/Dir.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="64" selection-start-line="25" selection-start-column="64" selection-end-line="25" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ts/core/Repo.ts" />
+    <entry file="file://$PROJECT_DIR$/src/ts/core/main.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ts/util/object/objectFields.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ts/core/Lab.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="19" lean-forward="true" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ts/core/setupRepo.ts" />
+    <entry file="file://$PROJECT_DIR$/src/ts/core/runCommand.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="42" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/@types/fs-extra/index.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="32" column="16" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ts/util/misc/AwaitAnyInput.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ts/util/collections/Range.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-335">
+          <caret line="43" column="8" lean-forward="true" selection-start-line="43" selection-start-column="8" selection-end-line="43" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ts/core/Repo.ts" />
+    <entry file="file://$PROJECT_DIR$/src/ts/core/LabInstructions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="32" column="2" lean-forward="true" selection-start-line="32" selection-start-column="2" selection-end-line="32" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ts/util/types/isType.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="32" column="37" lean-forward="true" selection-start-line="32" selection-start-column="37" selection-end-line="32" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tmp.txt" />
+    <entry file="file://$PROJECT_DIR$/src/ts/core/Lab.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="35" column="14" selection-start-line="35" selection-start-column="14" selection-end-line="35" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ts/util/io/Dir.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="43" column="10" selection-start-line="43" selection-start-column="10" selection-end-line="43" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/@types/node/index.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="720" column="22" lean-forward="true" selection-start-line="720" selection-start-column="22" selection-end-line="720" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="9" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ts/util/io/FileToCreate.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="24" column="14" lean-forward="true" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ts/core/main.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="34" column="7" selection-start-line="34" selection-start-column="7" selection-end-line="34" selection-end-column="7" />
+          <folding>
+            <element signature="e#0#52#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ts/core/Lab.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="86" column="21" lean-forward="true" selection-start-line="86" selection-start-column="21" selection-end-line="86" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ts/util/extensions/extensions.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="72" column="43" lean-forward="true" selection-start-line="72" selection-start-column="4" selection-end-line="72" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ts/util/extensions/allExtensions.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="135" column="6" lean-forward="true" selection-start-line="135" selection-start-column="6" selection-end-line="135" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ts/core/LabInstructions.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="22" column="16" lean-forward="true" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

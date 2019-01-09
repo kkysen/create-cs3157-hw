@@ -7,7 +7,6 @@ exports.FileToCreate = {
         return {
             path,
             create: async () => {
-                const _isFunction = isType_1.isFunction;
                 const data = !isType_1.isFunction(contents) ? contents : contents();
                 return await fs.writeFile(path, await data);
             },

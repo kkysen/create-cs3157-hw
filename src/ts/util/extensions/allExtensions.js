@@ -53,7 +53,7 @@ Object.defineImmutableProperties(Object, {
     },
     getAllPropertyNames(object) {
         return Array.from(new Set(Object.getPrototypeChain(object)
-            .flatMap(proto => Object.getOwnPropertyNames(proto))));
+            .flatMap(Object.getOwnPropertyNames)));
     },
     assignProperties(target, ...sources) {
         for (const source of sources) {
@@ -99,7 +99,10 @@ Object.defineImmutableProperties(Object.prototype, {
             value.freeze();
         }
         return this;
-    }
+    },
+    let(map) {
+        return map(this);
+    },
 });
 Object.defineImmutableProperties(Function, {
     compose(...funcs) {

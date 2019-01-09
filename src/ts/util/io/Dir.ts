@@ -12,6 +12,8 @@ export interface Dir extends FileToCreate {
     
     ensureCreated(): this;
     
+    ls(): Promise<string[]>;
+    
 }
 
 interface DirClass {
@@ -38,6 +40,7 @@ export const Dir: DirClass = {
                 ..._,
                 create: () => fs.ensureDir(dirPath),
             }),
+            ls: () => fs.readdir(dirPath),
         };
         return _;
     },

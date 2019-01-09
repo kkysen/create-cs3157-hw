@@ -1,7 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const fs = require("fs-extra");
-const Range_1 = require("../util/collections/Range");
 const Dir_1 = require("../util/io/Dir");
 const utils_1 = require("../util/misc/utils");
 const LabInstructions_1 = require("./LabInstructions");
@@ -24,7 +23,7 @@ function filesCreator(files) {
 }
 exports.Lab = {
     new(options) {
-        const { number, numParts, instructionsPath, parentDir: parentDirPath = "/mnt/c/Users/Khyber/workspace/AdvancedProgramming", remote: { username: remoteUsername = "ks3343", url: remoteUrl = "clac.cs.columbia.edu", parentDir: remoteParentDir = "~/cs3157", } = {}, } = options;
+        const { number, partNumbers, instructionsPath, parentDir: parentDirPath = "/mnt/c/Users/Khyber/workspace/AdvancedProgramming", remote: { username: remoteUsername = "ks3343", url: remoteUrl = "clac.cs.columbia.edu", parentDir: remoteParentDir = "~/cs3157", } = {}, } = options;
         const name = `lab${number}`;
         const labName = name;
         const parentDir = Dir_1.Dir.of(parentDirPath);
@@ -44,7 +43,7 @@ exports.Lab = {
             "",
             `add_executable(${name} \${SOURCE_FILES})`,
         ].join("\n");
-        const parts = Range_1.Range.new(numParts)
+        const parts = partNumbers
             .map(number => {
             const name = `part${number}`;
             const fullName = `${labName}_${name}`;
@@ -89,6 +88,8 @@ exports.Lab = {
                     `clean: ${prefixParts("clean")}`,
                     ...partNames.map(rule("make", "all")),
                     ...partNames.map(rule("clean")),
+                    `run:\n\t./\${MAIN_OUT}`,
+                    `valgrind:\n\tvalgrind --leak-check=yes ./\${MAIN_OUT}`,
                     `pull:\n\t${sync(false)}`,
                     `push:\n\t${sync(true)}`,
                     `submit:\n\t/home/w3157/submit/submit-lab ${name}`,
@@ -184,10 +185,10 @@ exports.Lab = {
     },
     async fromInstructions(options) {
         const { instructionsPath, parentDir, remote } = options;
-        const { number, numParts } = await LabInstructions_1.LabInstructions.from(instructionsPath);
+        const { number, partNumbers } = await LabInstructions_1.LabInstructions.from(instructionsPath);
         return exports.Lab.new({
             number,
-            numParts,
+            partNumbers,
             instructionsPath,
             parentDir,
             remote,

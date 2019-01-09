@@ -20,7 +20,6 @@ export const FileToCreate = {
         return {
             path,
             create: async () => {
-                const _isFunction = isFunction;
                 const data: MaybePromise<string> = !isFunction(contents) ? contents : contents();
                 return await fs.writeFile(path, await data);
             },

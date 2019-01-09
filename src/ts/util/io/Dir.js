@@ -17,6 +17,7 @@ exports.Dir = {
                 ..._,
                 create: () => fs.ensureDir(dirPath),
             }),
+            ls: () => fs.readdir(dirPath),
         };
         return _;
     },

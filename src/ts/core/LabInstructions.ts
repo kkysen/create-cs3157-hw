@@ -3,27 +3,24 @@ import {regex} from "../util/misc/regex";
 
 export interface LabInstructions {
     number: number;
-    numParts: number;
+    partNumbers: number[];
     path: string;
 }
 
 function findLabNumber(instructions: string): number {
-    const match = /Lab #([0-9])+/i.exec(instructions);
+    const match = /Lab #([0-9]+)/i.exec(instructions);
     if (!match) {
         throw new Error("no lab number found");
     }
     return parseInt(match[1]);
 }
 
-function findNumberOfLabParts(instructions: string): number {
-    const partNums = regex.matchAll(/Part ([0-9]+)/gi, instructions)
+function findLabPartNumbers(instructions: string): number[] {
+    return regex.matchAll(/Part ([0-9]+)/gi, instructions)
         .map(([, partNum]) => partNum)
         .map(e => parseInt(e))
+        .let(t => [...new Set<number>(t)])
         .sort();
-    if (!partNums.every((e, i) => e === i)) {
-        throw new Error("missing parts");
-    }
-    return partNums.length;
 }
 
 export const LabInstructions = {
@@ -33,7 +30,7 @@ export const LabInstructions = {
         return {
             path,
             number: findLabNumber(instructions),
-            numParts: findNumberOfLabParts(instructions),
+            partNumbers: findLabPartNumbers(instructions),
         };
     },
 };

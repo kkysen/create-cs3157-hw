@@ -64,7 +64,7 @@ interface LabDirOptions {
 
 export interface LabOptions extends LabDirOptions {
     readonly number: number;
-    readonly numParts: number;
+    readonly partNumbers: number[];
     readonly instructionsPath: string;
 }
 
@@ -81,7 +81,7 @@ export const Lab = {
     new(options: LabOptions): Lab {
         const {
             number,
-            numParts,
+            partNumbers,
             instructionsPath,
             parentDir: parentDirPath = "/mnt/c/Users/Khyber/workspace/AdvancedProgramming",
             remote: {
@@ -116,7 +116,7 @@ export const Lab = {
             `add_executable(${name} \${SOURCE_FILES})`,
         ].join("\n");
         
-        const parts = Range.new(numParts)
+        const parts = partNumbers
             .map(number => {
                 const name = `part${number}`;
                 const fullName = `${labName}_${name}`;
@@ -163,6 +163,8 @@ export const Lab = {
                     `clean: ${prefixParts("clean")}`,
                     ...partNames.map(rule("make", "all")),
                     ...partNames.map(rule("clean")),
+                    `run:\n\t./\${MAIN_OUT}`,
+                    `valgrind:\n\tvalgrind --leak-check=yes ./\${MAIN_OUT}`,
                     `pull:\n\t${sync(false)}`,
                     `push:\n\t${sync(true)}`,
                     `submit:\n\t/home/w3157/submit/submit-lab ${name}`,
@@ -269,10 +271,10 @@ export const Lab = {
     
     async fromInstructions(options: LabFromInstructionsOptions): Promise<Lab> {
         const {instructionsPath, parentDir, remote} = options;
-        const {number, numParts} = await LabInstructions.from(instructionsPath);
+        const {number, partNumbers} = await LabInstructions.from(instructionsPath);
         return Lab.new({
             number,
-            numParts,
+            partNumbers,
             instructionsPath,
             parentDir,
             remote,
